@@ -1,0 +1,48 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    position: relative;
+    z-index: 1;
+    background-color: var(--white);
+    color: var(--color-1);
+    box-shadow: 0px 0px 16px -4px var(--black);
+}
+
+header > nav {
+    height: 60px;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > .home > a {
+    text-transform: uppercase;
+}
+
+nav > ul {
+    display: flex;
+    list-style-type: none;
+    gap: 12px;
+}
+
+ul > li {
+    text-transform: uppercase;
+    font-family: var(--font-2);
+    font-weight: 700;
+}
+
+main {
+    background-color: hsl(0, 0%, 90%);
+    flex-grow: 1;
+}
+
+footer {
+    background-color: var(--color-1);
+    color: var(--white);
+    padding: 12px;
+}
