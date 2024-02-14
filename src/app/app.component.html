@@ -5,13 +5,10 @@
         Test
       </a>
     </div>
-    @if (!sessionService.loggedIn) {
-      <button
-      (click)="logIn()"
-      class="btn primary">Login</button>
-    } @else {
-      <p>Welcome, User</p>
-    }
+    <ul class="menu">
+        <li><a href="">About</a></li>
+        <li><button class="btn primary" (click)="logIn()">Login</button></li>
+    </ul>
   </nav>
 </header>
 <main>

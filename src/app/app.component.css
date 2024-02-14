@@ -24,16 +24,17 @@ nav > .home > a {
     text-transform: uppercase;
 }
 
-nav > ul {
+nav > .menu {
     display: flex;
+    align-items: center;
     list-style-type: none;
     gap: 12px;
 }
 
 ul > li {
-    text-transform: uppercase;
     font-family: var(--font-2);
-    font-weight: 700;
+    font-weight: 400;
+    font-size: 1.2rem;
 }
 
 main {
