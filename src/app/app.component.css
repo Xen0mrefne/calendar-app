@@ -31,7 +31,7 @@ nav > .menu {
     gap: 12px;
 }
 
-ul > li {
+nav > .menu > li {
     font-family: var(--font-2);
     font-weight: 400;
     font-size: 1.2rem;

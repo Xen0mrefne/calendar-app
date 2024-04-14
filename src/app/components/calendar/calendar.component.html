@@ -1,1 +1,29 @@
-<p>calendar works!</p>
+<form action="" [formGroup]="dateForm">
+    <div class="field-group">
+        <label>Fecha: </label>
+        <div class="input-wrapper" [class.invalid]="dateForm.invalid">
+            <input type="text" id="dd" formControlName="d" placeholder="dd">
+            /
+            <input type="text" id="mm" formControlName="m" placeholder="mm">
+            /
+            <input type="text" id="yyyy" formControlName="y" placeholder="yyyy">
+        </div>
+    </div>
+    <div class="field-group">
+        <button
+        class="btn primary" type="button"
+        (click)="addReminder()"
+        [disabled]="dateForm.invalid">
+            Add reminder
+        </button>
+    </div>
+</form>
+
+@if (dateForm.invalid) {
+    <div>
+        @if (month?.invalid) {
+            <p>Invalid month</p>
+        }
+        OMG
+    </div>
+}

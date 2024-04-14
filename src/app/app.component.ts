@@ -1,18 +1,17 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { SessionService } from './services/session.service';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, RouterLink],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
 export class AppComponent {
 
-  constructor(protected sessionService: SessionService) {
-  }
+  constructor(protected sessionService: SessionService) { }
 
   logIn() {
     this.sessionService.logIn();
